@@ -1,6 +1,7 @@
 {
   "name": "tanma-design-snippets",
   "displayName": "tanma design snippets",
+  "icon": "images/logo.png",
   "description": "",
   "version": "0.0.1",
   "engines": {
