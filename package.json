@@ -1,0 +1,48 @@
+{
+  "name": "tanma-design-snippets",
+  "displayName": "tanma design snippets",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "Vue",
+    "Vue 2",
+    "Components",
+    "Vue Snippets",
+    "Tanma Design"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/components.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/components.json"
+      }
+    ]
+  },
+
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "yarn run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.73.0",
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "16.x",
+    "eslint": "^8.26.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.8.4",
+    "@vscode/test-electron": "^2.2.0"
+  }
+}

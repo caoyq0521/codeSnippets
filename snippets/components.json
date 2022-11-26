@@ -1,0 +1,200 @@
+{
+	"Baisc: Button - 按钮": {
+		"prefix": "tmb",
+		"body": [
+			"<tm-button",
+      "  type=\"${1|primary,danger,addition,text,forbidden,wicked|}\"",
+      "  @click=\"${2}\"",
+      ">",
+      "  ${3}",
+      "</tm-button>"
+		],
+		"description": "tanma design <tm-button>"
+	},
+  "Basic: Title - 标题": {
+    "prefix": "tmt",
+    "body": [
+      "<tm-title",
+      "  title=\"${1}\"",
+      "/>"
+    ],
+    "description": "tanma design <tm-title>"
+  },
+  "Show: Avatar - 头像": {
+    "prefix": "tma",
+    "body": [
+      "<tm-avatar",
+      "  icon-type=\"${1|image,person,company,group,goods|}\"",
+      "  mode=\"${2|square,circle,rectangle|}\"",
+      "/>"
+    ],
+    "description": "tanma design <tm-avatar>"
+  },
+  "Show: Empty - 空状态": {
+    "prefix": "tme",
+    "body": [
+      "<tm-empty",
+      "  type=\"${1|empty,error,build|}\"",
+      "/>"
+    ],
+    "description": "tanma design <tm-empty>"
+  },
+  "Show: Pagination - 分页": {
+    "prefix": "tmp",
+    "body": [
+      "<tm-pagination",
+      "  :current-page.sync=\"currentPage\"",
+      "  :total=\"totalNum\"",
+      "  :pager-count=\"7\"",
+      "  :page-size=\"pageSize\"",
+      "  :page-sizes=\"[20, 40, 80, 100]\"",
+      "  @size-change=\"handleSizeChange\"",
+      "  @current-change=\"handleCurrentChange\"",
+      "/>"
+    ],
+    "description": "tanma design <tm-pagination>"
+  },
+  "Show: Tabs - 标签页": {
+    "prefix": "tmtabs",
+    "body": [
+      "<tm-tabs",
+      "  v-model=\"currentKey\"",
+      "  :options=\"tabsOptions\"",
+      "/>"
+    ],
+    "description": "tanma design <tm-tabs>"
+  },
+  "Show: Tag - 标签": {
+    "prefix": "tmtag",
+    "body": [
+      "<tm-tag",
+      "  type=\"${1|success,info,warning,danger|}\"",
+      "  closable",
+      "  @close=\"handleTagClose\"",
+      "/>"
+    ],
+    "description": "tanma design <tm-tag>"
+  },
+  "Show: TagPro - 标签": {
+    "prefix": "tmtagp",
+    "body": [
+      "<tm-tag-pro",
+      "  type=\"${1|content,individual,company,department,employee,group|}\"",
+      "  closable",
+      "  @close=\"handleTagProClose\"",
+      "/>"
+    ],
+    "description": "tanma design <tm-tag-pro>"
+  },
+  "Show: TagGroup - 标签组": {
+    "prefix": "tmtagg",
+    "body": [
+      "<tm-tag",
+      "  v-for=\"item in showItems\"",
+      "  :key=\"item.label\"",
+      "  :type=\"item.type\"",
+      "  effect=\"light\"",
+      ">",
+        "{{ item.label }}",
+      "</tm-tag>",
+      "<tm-tag-group>",
+        "<tm-tag",
+        "  v-for=\"item in items\"",
+        "  :key=\"item.label\"",
+        "  :type=\"item.type\"",
+        "  effect=\"light\"",
+        ">",
+          "{{ item.label }}",
+        "</tm-tag>",
+      "</tm-tag-group>"
+    ],
+    "description": "tanma design <tm-tag-group>"
+  },
+  "Show: Timeline - 时间线": {
+    "prefix": "tmti",
+    "body": [
+      "<tm-timeline>",
+        "<tm-timeline-item",
+        "  v-for=\"(item, index) in activities\"",
+        "  :timestamp=\"item.timestamp\"",
+        "  :key=\"index\"",
+        ">",
+          "{{ item.content }}",
+        "</tm-timeline-item>",
+      "</tm-timeline>"
+    ],
+    "description": "tanma design <tm-timeline>"
+  },
+  "Show: Tree - 树": {
+    "prefix": "tmtree",
+    "body": [
+      "<tm-tree",
+      "  :data=\"\"",
+      "  virtual-scroll",
+      "  :height=\"390\"",
+      "  node-key=\"\"",
+      "  :props=\"\"",
+      "  empty-text=\"\"",
+      "  show-checkbox=\"false\"",
+      "  highlight-current",
+      "  @node-click=\"handleTreeNodeClick\"",
+      "/>"
+    ],
+    "description": "tanma design <tm-tree>"
+  },
+  "Nav: Steps - 步骤条": {
+    "prefix": "tmsteps",
+    "body": [
+      "<tm-steps",
+      "  :active=\"currentStep\"",
+      "  @change=\"handleStepChange\"",
+      ">",
+      "   <tm-step",
+      "     v-for=\"(item, index) in steps\"",
+      "     :title=\"item.label\"",
+      "     :key=\"item.key\"",
+      "   >",
+      "   </tm-step>",
+      "</tm-steps>"
+    ],
+    "description": "tanma design <tm-steps>"
+  },
+  "Feedback: Dialog - 对话框": {
+    "prefix": "tmd",
+    "body": [
+      "<tm-dialog",
+      "  title=\"新增链接\"",
+      "  v-model=\"visible\"",
+      "  append-to-body",
+      "  width=\"620px\"",
+      "  :before-ok=\"handleBeforeOk\"",
+      "  @close=\"handleClose\"",
+      "  @ok=\"handleOk\"",
+      ">",
+      "<!-- slot default -->",
+      "</tm-dialog>"
+    ],
+    "description": "tanma design <tm-dialog>"
+  },
+  "Feedback: Tip - 文字提示": {
+    "prefix": "tmtip",
+    "body": [
+      "<tm-tip",
+      "  content=\"${1}\"",
+      "  placement=\"${2|top,top-start,top-end,bottom,bottom-start,bottom-end,left,left-start,left-end,right,right-start,right-end|}\"",
+      "/>"
+    ],
+    "description": "tanma design <tm-tip>"
+  },
+  "Business: Block - 内容块": {
+    "prefix": "tmblock",
+    "body": [
+      "<tm-block",
+      "  title=\"${1}\"",
+      ">",
+      "<!-- slot default -->",
+      "</tm-block>"
+    ],
+    "description": "tanma design <tm-block>"
+  }
+}
