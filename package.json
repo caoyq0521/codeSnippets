@@ -4,12 +4,17 @@
   "icon": "images/logo.png",
   "description": "",
   "version": "0.0.1",
+  "publisher": "caoyq0521",
   "engines": {
     "vscode": "^1.73.0"
   },
   "categories": [
     "Snippets"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caoyq0521/codeSnippets.git"
+  },
   "keywords": [
     "Vue",
     "Vue 2",
