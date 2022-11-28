@@ -20,6 +20,47 @@
     ],
     "description": "tanma design <tm-title>"
   },
+  "Form - optionalPicker - 日周月选择器": {
+    "prefix": "tmop",
+    "body": [
+      "<tm-optional-picker",
+      "  :default-time=\"dateRange\"",
+      "  mode=\"${1|['day'\\,'week'\\,'month'],day,week,month,['day'\\,'week'],['week'\\,'month'],['day'\\,'month']|}\"",
+      "  @change=\"handleOptionalPickerChange\"",
+      "/>"
+    ],
+    "description": "tanma design <tm-optional-picker>"
+  },
+  "Form - Search - 搜索框": {
+    "prefix": "tms",
+    "body": [
+      "<tm-search",
+      "  v-model=\"value\"",
+      "  placeholder=\"请输入搜索内容\"",
+      "  maxlength=\"30\"",
+      "  show-word-limit",
+      "  @change=\"handleSearchChange\"",
+      "  @blur=\"handleSearchBlur\"",
+      "/>"
+    ],
+    "description": "tanma design <tm-search>"
+  },
+  "Form - Upload - 上传": {
+    "prefix": "tmu",
+    "body": [
+      "<tm-upload",
+      "  hover",
+      "  :data=\"{${1}}\"",
+      "  action=\"${2}\"",
+      "  :limit=\"1\"",
+      "  :size=\"5\"",
+      "  :upload-list=\"[]\"",
+      "  @success=\"handleUploadSuccess\"",
+      "  @error=\"handleUploadError\"",
+      "/>"
+    ],
+    "description": "tanma design <tm-upload>"
+  },
   "Show: Avatar - 头像": {
     "prefix": "tma",
     "body": [
@@ -29,6 +70,19 @@
       "/>"
     ],
     "description": "tanma design <tm-avatar>"
+  },
+  "Show: CollapseText - 折叠文本": {
+    "prefix": "tmct",
+    "body": [
+      "<tm-collapse-text",
+      "  text=\"${1:文本内容}\"",
+      "  :lines=\"3\"",
+      "  show-popover",
+      "  open-button-text=\"展开\"",
+      "  close-button-text=\"收起\"",
+      "/>"
+    ],
+    "description": "tanma design <tm-collapse-text>"
   },
   "Show: Empty - 空状态": {
     "prefix": "tme",
@@ -158,6 +212,15 @@
       "</tm-steps>"
     ],
     "description": "tanma design <tm-steps>"
+  },
+  "Show: ButtonTabs - 标签按钮": {
+    "prefix": "tmbtabs",
+    "body": [
+      "<tm-button-tabs",
+      "  button-type=\"${1|primary,danger|}\"",
+      "/>"
+    ],
+    "description": "tanma design <tm-button-tabs>"
   },
   "Feedback: Dialog - 对话框": {
     "prefix": "tmd",

@@ -1,9 +1,17 @@
 # Change Log
 
-All notable changes to the "vscodetest" extension will be documented in this file.
+All notable changes to the "tanma design snippets" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## v0.0.2
 
-## [Unreleased]
+`2011-11-28`
+
+- add 4 new snippets of Components part.
+
+- add 2 new snippets of Script part.
+
+## v0.0.1
+
+`2011-11-26`
 
 - Initial release

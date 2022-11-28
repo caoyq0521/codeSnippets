@@ -1,0 +1,33 @@
+{
+  "Tanma: Axios - 接口请求": {
+    "prefix": "tmaxios",
+    "body": [
+      "const params = {}",
+      "this.$axios.${1|post,get|}(this.$serve.${2:url}, params).then(res => {",
+      "  const { data } = res.data",
+      "  // 处理数据",  
+      "})"
+    ]
+  },
+  "Tanma: Dialog - 对话框": {
+    "prefix": "tmdialog",
+    "body":[
+      "this.$tmDialog({",
+      "  title: '${1:标题}',",
+      "  content: '${2:提示内容}',",
+      "  okType: '${3|primary,danger|}',",
+      "  width: '500px',",
+      "  okText: '${4}',",
+      "  cancelHide: true,",
+      "  onOk: () => {",
+      "    // onOk Event",
+      "    ${5}",
+      "  },",
+      "  onCancel: () => {",
+      "    // onCancel Event",
+      "    ${6}",
+      "  }",
+      "});"
+    ]
+  }
+}

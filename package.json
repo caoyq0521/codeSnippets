@@ -3,7 +3,7 @@
   "displayName": "tanma design snippets",
   "icon": "images/logo.png",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "caoyq0521",
   "engines": {
     "vscode": "^1.73.0"
@@ -31,6 +31,10 @@
       {
         "language": "vue-html",
         "path": "./snippets/components.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/script.json"
       }
     ]
   },
