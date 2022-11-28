@@ -23,7 +23,7 @@ No. | Trigger Key |	Element Tag
 `17.` | `tms` | `<tm-search>`
 `18.` | `tmop` | `<tm-optional-picker>`
 `19.` | `tmu` | `<tm-upload>`
-`12.` | `tmct` | `<tm-collapse-text>`
+`20.` | `tmct` | `<tm-collapse-text>`
 
 
 ## Script Part
